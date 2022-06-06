@@ -1,0 +1,26 @@
+pacman.sh yada yada
+
+
+Projects/
+Card/
+About me/
+Guestbook/
+.Blog/
+
+
+Projects:
+    3D modelling
+        Render & wireframe image of each render
+
+Card
+    Card
+    pacman curl .card
+
+About me
+    About me
+
+guestbook
+    nosleepguestbook
+
+.blog
+=.blog
