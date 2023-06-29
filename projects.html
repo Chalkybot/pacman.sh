@@ -19,17 +19,25 @@
 
             <a href="about.html">About/</a><br>
 
-            <a href="LOTD.html">Cool Links/</a><br>
-
             <a href="https://github.com/Chalkybot/">Github/</a><br>
             [guest@Arch ~]$ <p1 class="blinkme">█</p1> 
         </p>
     </div>
     <div id="text">
-        <p>I've been getting back into programming after taking a long break. The last time I did "serious" programming was around 3-4 years ago. Back then, I had no proper aim for I wanted to do and just made things for the sake of creating. Now, I've got real aims for what I create and don't have infinite awful feature creep which is nice.</p>
-        <p> My recent projects worth mentioning, aside from this "retro" website include a script to sync Spotify data with VRChat and a protonDB commandline interface.
-        <p> I'll add more stuff here once I've got more time.</p>
-           
+        <h2>Last updated: 29.06.2023</h2>
+        <h3><a href="https://github.com/Chalkybot/vm-on-demand">VM-On-Demand</a></h3>
+        <p>I've been very interested in VMs in the past, not only from a theoretical side but also practically speaking, how could I create a VM, what would be the real world purposes and whatnot.</p>
+        <p>>My first serious introduction to VMs (aside from reading up on them) was building a single GPU passthrough virtual machine. The end goal of this would be to play VR games without installing windows on baremetal.</p>
+        <p>I <a href="success.png">succeeded</a> in this and was able to play VR games with windows running as a virtual machine. This gave me a good taste of how powerful and interesting VMs could be.</p>
+        <p>Now, exactly a year later, having seen how VDI and EsXi work at the University of Helsinki, I wanted to build my own Vm-On-Demand system. My outline on the project was very simple. 
+            I log in to a port in a specified port-range using SSH. After this, a VM would be spun up that would exist for me to mess around in until I decide to log off, after which the VM is destroyed.</p>
+        <p>Originally I thought about writing a listener that would listen on the port and just spin up the VM and clone traffic from the port to the VM. After thinking about this more, a few technical difficulties came to mind and I moved on to another, the current idea.</p>
+        <p>At the moment, the VM system works by having a 'gateway' vm node. A machine that purely handles the initial connection and commands the creation/destruction of vms.</p>
+        <p> The project is still very much in its infancy, I've written the current set up with bash and it "works", but would never survive in prod. Too many ways to abuse the system and to even attack the gateway node.</p>
+        <p>For now, it's useful to me and helped me learn qemu/virsh better.</p>
+        <h3><a href="https://github.com/Chalkybot/rfc-reader">RFC-reader</a></h3>
+        <p>As I've been reading up on the history of the internet and learning about different protocols with rfc pages, I got annoyed at having to open up a browser, search for an RFC reference number, open up a page and then read the rfc from there.</p>
+        <p>My solution to this was very simple, I wrote a very simple and short python script that I can use to download and read any RFC page on the command line.</p>
     </div>
 
     <img src="images/moon.png"> 
