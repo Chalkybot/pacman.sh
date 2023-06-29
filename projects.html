@@ -28,7 +28,7 @@
         <h3><a href="https://github.com/Chalkybot/vm-on-demand">VM-On-Demand</a></h3>
         <p>I've been very interested in VMs in the past, not only from a theoretical side but also practically speaking, how could I create a VM, what would be the real world purposes and whatnot.</p>
         <p>>My first serious introduction to VMs (aside from reading up on them) was building a single GPU passthrough virtual machine. The end goal of this would be to play VR games without installing windows on baremetal.</p>
-        <p>I <a href="success.png">succeeded</a> in this and was able to play VR games with windows running as a virtual machine. This gave me a good taste of how powerful and interesting VMs could be.</p>
+        <p>I <a href="images/success.png">succeeded</a> in this and was able to play VR games with windows running as a virtual machine. This gave me a good taste of how powerful and interesting VMs could be.</p>
         <p>Now, exactly a year later, having seen how VDI and EsXi work at the University of Helsinki, I wanted to build my own Vm-On-Demand system. My outline on the project was very simple. 
             I log in to a port in a specified port-range using SSH. After this, a VM would be spun up that would exist for me to mess around in until I decide to log off, after which the VM is destroyed.</p>
         <p>Originally I thought about writing a listener that would listen on the port and just spin up the VM and clone traffic from the port to the VM. After thinking about this more, a few technical difficulties came to mind and I moved on to another, the current idea.</p>
