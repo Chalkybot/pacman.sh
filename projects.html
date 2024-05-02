@@ -25,6 +25,10 @@
     </div>
     <div id="text">
         <h2>Last updated: 30.03.2024</h2>
+        <h3><a href="https://github.com/Chalkybot/Syscall-Winapi-Rust">A Rust shellcode injector implemented with direct syscalls</a></h3>
+        <p>This is a proof of concept project that aims at utilizing syscalls as opposed to ntdll / kernel32 functions.</p> 
+        <p>While this POC is able to skirt around the majority of antivirus software, it still falls flat at manual analysis. The next and inevitable step is to look at obfuscating the code, either through dynamic library loading or other means.</p>
+        <p>I have really enjoyed working on this, and feel like yet again, it's my most technical project so far. While this specific repo might die, I'll continue the general project, maybe under a different name.</p>
         <h3><a href="https://github.com/Chalkybot/memory-injector">Memory injector</a></h3>
         <p>After getting more involved with reversing, I got the idea to start work on this project. The goal of this software is to enable text editor like editing of the assembly of running processes. There are better tools for memory manipulation, but I didn't find any that fit this specific niece. As a big plus, this is a great opportunity to learn more about processes on Windows. </p>
         <p>As I begun work on this, I also realized that I need to write better rust-like, safe abstractions for the Windows API, which has been a side bonus on this side. Once I'm happy with the state of the code, I'll likely rip out the Windows API abstractions, and make another repo for just them. I have definitely been enjoying these more technical projects.</p>
